@@ -1,0 +1,128 @@
+@import "./common/fonts";
+@import "./common/reset";
+@import "./common/keyframes";
+
+.body {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+.align {
+    padding-left: Max(calc(50% - 600px), 16px);
+    padding-right: Max(calc(50% - 600px), 16px);
+}
+
+.header {
+    background: radial-gradient(at left top, #ad61ff 35%, rgba(#ad61ff, 0) 50%);
+    padding-top: 16px;
+        
+    &__top {
+        display: grid;
+        grid-template-columns: 11fr 1fr;
+        gap: 16px;
+    }
+
+    &__menu {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 0.3em;
+    }
+
+    &__link {
+        white-space: nowrap;
+        text-decoration: none;
+        color: #888;
+        transition: color 0.3s ease-in;
+
+        &:hover {
+            color: #000;
+        }
+    }
+
+    &__title {
+        margin-top: 32px;
+        font-weight: 600;
+        font-size: 2.6em;
+        line-height: 1em;
+    }
+}
+
+.section {
+    margin-top: 32px;
+
+    &__inner {
+        display: flex;
+        gap: 64px;
+        flex-flow: row wrap;
+    }
+
+    &__title {
+        font-size: 1.8em;
+        line-height: 0.8em;
+    }
+
+    &__list{
+        min-width: 200px;
+        padding-left: 32px;
+        counter-reset: myCounter;
+        display: flex;
+        flex-flow: column nowrap;
+        row-gap: 8px;
+        margin-top: 32px;
+        
+    }
+
+    &__list-item {
+        display: flex;
+        flex-flow: row nowrap;
+        column-gap: 16px;
+        list-style: none;
+        align-items: center;
+
+        &::before {
+            counter-increment: myCounter;
+            content:counter(myCounter);
+            width: 35px;
+            height: 35px;
+            background-color: #ad61ff;
+            display: flex;
+            flex-flow: row nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+    }
+
+    &__list-item-link {
+        color: #000;
+        text-decoration: none;
+        font-size: 1em;
+        line-height: 1.5em;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.footer {
+    margin-top: 32px;
+    min-height: 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items:flex-end;
+    align-content: flex-end;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: radial-gradient(at right bottom, #ad61ff 35%, rgba(#ad61ff, 0) 50%);
+
+    &__text {
+        margin: 8px;
+
+        &_white {
+            color: white;
+        }
+    }
+}
