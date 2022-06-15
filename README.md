@@ -1,3 +1,3 @@
-# sky.pro Домашнее задание js-1
+# sky.pro Домашнее задание js-2
 ## Задание:
-[Ссылка](https://skyengpublic.notion.site/2-1-JavaScript-876f83d3a56048af83ff1aa9caa0bb4f)
+[Ссылка](https://skyengpublic.notion.site/2-2-JavaScript-3f6e692dfdb84da8ac281f05d92936d7)

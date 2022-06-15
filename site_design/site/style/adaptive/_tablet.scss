@@ -1,0 +1,17 @@
+// adaptive for tablet size
+
+@include frontier($site-width-desktop, $site-gap-desktop) {
+    
+    .align {
+        padding-left: calc(50vw - #{$site-width-tablet / 2});
+        padding-right: calc(50vw - #{$site-width-tablet / 2});
+    }
+    
+    .game {
+
+        &__inner {
+
+            grid-template-columns: repeat(8, 1fr);
+        }
+    }
+}

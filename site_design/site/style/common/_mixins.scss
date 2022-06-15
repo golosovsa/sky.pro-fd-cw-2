@@ -5,3 +5,9 @@
     line-height: $height;
     color: $color;
 }
+
+@mixin frontier($layout_size, $min_padding) {
+    @media (max-width: ($layout_size + $min_padding)) {
+        @content
+    }
+}
