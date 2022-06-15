@@ -1,11 +1,7 @@
-function howOldAreYou(age) {
-    if (age <= 0) {
-        alert("Вы ввели неправильное значение");
-    } else if (age < 13) {
-        alert("Привет, друг!");
-    } else {
-        alert("Добро пожаловать!");
-    }
+function rand10() {
+    return Math.ceil(10 * Math.random());
 }
 
-howOldAreYou(Number(prompt("How old are you?")));
+for (let counter = 0; counter < 100; counter++) {
+    console.log(rand10());
+}

@@ -5,7 +5,7 @@
         padding-left: calc(50vw - #{$site-width-mobile / 2});
         padding-right: calc(50vw - #{$site-width-mobile / 2});
     }
-    
+
     .header {
         height: 735px;
         display: flex;
@@ -40,11 +40,34 @@
         }
     }
 
-    .game {
+    .game-card {
 
         &__inner {
             
             grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    .game {
+        height: 654px;
+        align-content: flex-start;
+        align-items: center;
+        padding-top: 51px;
+
+        &__content  {
+            width: 300px;
+        }
+
+        &__title {
+            @include text(#fff, 700, 32px, 39px);
+        }
+
+        &__info {
+            @include text(#fff, 300, 14px, 22px);
+        }
+
+        &__img {
+            width: 344px;
         }
     }
 }

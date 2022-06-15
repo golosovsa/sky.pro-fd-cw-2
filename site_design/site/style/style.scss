@@ -14,11 +14,28 @@
     padding-right: calc(50vw - #{$site-width-desktop / 2});
 }
 
+.button {
+    @include text(#fff, 400, 18px, 22px);
+    width: 234px;
+    height: 49px;
+    background-color: #9C0332;
+    border: none;
+    border-radius: 30px;
+    transition: background-color 0.5s ease-out;
+
+    &:hover {
+        background-color: #EB443F;
+    }
+}
 
 .header {
     height: 1024px;
     background: center/cover url(./../img/header-bg.jpg) no-repeat,
     linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%);
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 32px;
+
 
     &__title {
         @include text(#fff, 700, 64px, 78px);
@@ -29,30 +46,15 @@
     &__text {
         @include text(#fff, 300, 18px, 32px);
         width: 480px;
-        margin-top: 32px;
+        padding-bottom: 12px;
 
         em {
             @include text(#fff, 700, 18px, 32px);
         }
     }
-
-    &__button {
-        @include text(#fff, 400, 18px, 22px);
-        width: 234px;
-        height: 49px;
-        background-color: #9C0332;
-        border: none;
-        border-radius: 30px;
-        margin-top: 44px;
-        transition: background-color 0.5s ease-out;
-
-        &:hover {
-            background-color: #EB443F;
-        }
-    }
 }
 
-.game {
+.game-card {
     grid-column: span 4;
     gap: $site-gap-desktop;
     height: 300px;
@@ -90,6 +92,40 @@
 
     &:hover {
         border-color: #44D2FF;
+    }
+}
+
+.game {
+    height: 800px;
+    background-color: #000915;
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 32px;
+    row-gap: 64px;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+    &__content {
+        width: 584px;
+        display: flex;
+        flex-flow: column nowrap;
+        row-gap: 32px;
+        align-content: flex-start;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__title {
+        @include text(#fff, 700, 48px, 59px);
+    }
+
+    &__info {
+        @include text(#fff, 300, 18px, 32px);
+    }
+
+    &__img {
+        width: 485px;
     }
 }
 

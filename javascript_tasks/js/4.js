@@ -1,9 +1,3 @@
-function pow2(number) {
-    return number ** 2;
+for (let counter = 7; counter < 23; counter++) {
+    console.log(counter);
 }
-
-console.log(pow2(1));
-console.log(pow2(2));
-console.log(pow2(3));
-console.log(pow2(4));
-console.log(pow2(5));

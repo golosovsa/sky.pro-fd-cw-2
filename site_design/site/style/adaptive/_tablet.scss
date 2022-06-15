@@ -7,11 +7,23 @@
         padding-right: calc(50vw - #{$site-width-tablet / 2});
     }
     
-    .game {
+    .game-card {
 
         &__inner {
 
             grid-template-columns: repeat(8, 1fr);
+        }
+    }
+
+    .game {
+        justify-content: center;
+
+        &__content {
+            align-items: center
+        }
+
+        &__info {
+            text-align: center;
         }
     }
 }

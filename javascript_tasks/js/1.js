@@ -1,9 +1,7 @@
-let password = "password";
+let arr =[];
 
-let user_input = prompt("Enter 'password'");
+let number = 10;
 
-if (user_input == password) {
-    alert(true);
-} else {
-    alert(false);
-}
+arr.push(number);
+
+console.log(arr);
