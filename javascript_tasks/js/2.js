@@ -1,3 +1,3 @@
-for (let counter = 0; counter < 2; counter++) {
-    console.log("Hello");
-}
+let arr = [1, 5, 4, 10, 0, 3];
+
+console.log(arr.indexOf(4));

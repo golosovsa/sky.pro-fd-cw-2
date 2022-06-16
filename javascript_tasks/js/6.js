@@ -1,9 +1,7 @@
-const arrayGenerator = (length) => {
-    let result = Array(length);
-    for (let index = 0; index < result.length; index++) {
-        result[index] = index + 1;
-    }
-    return result;
-}
+let arr = [1, 1, 1];
 
-console.log(arrayGenerator(5).reduce((akk, item) => akk + item, 0));
+console.log([...arr, 2, 2, 2]);
+
+arr.push(2, 2, 2);
+
+console.log(arr);

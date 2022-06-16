@@ -33,8 +33,18 @@
             <P class="game__info">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</P>
             <input class="button" type="button" value="Играть!" onclick="goGame1();">
         </div>
-        <img class="game__img" src="./img/game-img.svg" alt="Игра">
+        <img class="game__img" src="./img/game-img-1.svg" alt="Игра">
     </section>
-    <script src="./js/script.js"></script>
+
+    <section class="game game_reverse align">
+        <img class="game__img" src="./img/game-img-2.svg" alt="Игра">
+        <div class="game__content">
+            <h2 class="game__title">Запомни слова</h2>
+            <P class="game__info">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</P>
+            <input class="button" type="button" value="Играть!" onclick="goGame2();">
+        </div>
+    </section>
+    <script src="./js/game-1.js"></script>
+    <script src="./js/game-2.js"></script>
 </body>
 </html>

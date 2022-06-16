@@ -10,9 +10,8 @@ const randArr = (len, func) => {
     return result;
 }
 
-let arr = randArr(10, rand10);
+let arr = randArr(5, rand10);
 
-let oddArr = arr.filter((item) => { return item % 2 === 0 && item !== 0; });
-
-console.log(arr);
-console.log(oddArr);
+for (let i = 0; i < arr.length - 1; i++) {
+    console.log(arr[i] + arr[i + 1]);
+}

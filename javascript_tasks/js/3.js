@@ -1,3 +1,3 @@
-for (let counter = 1; counter < 6; counter++) {
-    console.log(counter);
-}
+const arr = [1, 3, 5, 10, 20];
+
+console.log(arr.join(" "));

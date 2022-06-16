@@ -102,12 +102,12 @@
   margin-top: 32px;
 }
 
-.section__list[start='8'] {
-  counter-reset: myCounter 7;
+.section__list[start='13'] {
+  counter-reset: myCounter 12;
 }
 
-.section__list[start='9'] {
-  counter-reset: myCounter 8;
+.section__list[start='14'] {
+  counter-reset: myCounter 13;
 }
 
 .section__list-item {

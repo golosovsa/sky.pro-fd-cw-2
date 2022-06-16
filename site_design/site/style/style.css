@@ -234,6 +234,12 @@
   .game__info {
     text-align: center;
   }
+  .game_reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse nowrap;
+            flex-flow: column-reverse nowrap;
+  }
 }
 
 @media (max-width: 822px) {

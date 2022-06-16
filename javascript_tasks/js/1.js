@@ -1,7 +1,6 @@
-let arr =[];
+let arr = [1, 5, 4, 10, 0, 3];
 
-let number = 10;
-
-arr.push(number);
-
-console.log(arr);
+for (const el of arr) {
+    console.log(el);
+    if (el === 10) break;
+}

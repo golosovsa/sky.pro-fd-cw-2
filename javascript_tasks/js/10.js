@@ -10,9 +10,7 @@ const randArr = (len, func) => {
     return result;
 }
 
-let arr = randArr(10, rand10);
+let arr = randArr(6, rand10);
+let average = arr.reduce((akk, value) => { return akk + value;}, 0) / arr.length;
 
-let oddArr = arr.filter((item) => { return item % 2 === 0 && item !== 0; });
-
-console.log(arr);
-console.log(oddArr);
+console.log(average);

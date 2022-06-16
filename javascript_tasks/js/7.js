@@ -1,3 +1,6 @@
-const arr = [10, 27, 33, 67, 90, 235, 353, 987, 1000]
+let arr = [9, 8, 7, 'a', 6, 5]
 
-console.log(arr.reverse());
+arr.sort();
+arr.pop();
+
+console.log(arr);

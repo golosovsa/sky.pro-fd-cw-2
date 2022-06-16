@@ -25,5 +25,9 @@
         &__info {
             text-align: center;
         }
+
+        &_reverse {
+            flex-flow: column-reverse nowrap;
+        }
     }
 }

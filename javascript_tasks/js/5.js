@@ -1,7 +1,11 @@
-function rand10() {
-    return Math.ceil(10 * Math.random());
+function genMatr(rows, cols, initValue) {
+    let result = [];
+    for (let i = 0; i < rows; i++) {
+        let row = Array(cols);
+        row.fill(initValue);
+        result.push(row);
+    }
+    return result;
 }
 
-for (let counter = 0; counter < 100; counter++) {
-    console.log(rand10());
-}
+console.log(genMatr(3, 3, 1));
