@@ -1,11 +1,5 @@
-function genMatr(rows, cols, initValue) {
-    let result = [];
-    for (let i = 0; i < rows; i++) {
-        let row = Array(cols);
-        row.fill(initValue);
-        result.push(row);
-    }
-    return result;
-}
+let arr = [1, 2, 3, 4, 5, 6, 7];
 
-console.log(genMatr(3, 3, 1));
+arr.splice(3, 2);
+
+console.log(arr);

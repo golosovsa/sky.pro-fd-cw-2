@@ -1,16 +1,21 @@
-const rand10 = (...argv) => {
-    return Math.round(10 * Math.random());
+const riddle = "Висит груша нельзя скушать";
+const answers = ["лампа", "лампочка"];
+const attempts = 3;
+
+function userDialog() {
+    for (let attempt = 0; attempt < attempts; attempt++) {
+        userAnswer = prompt(`Отгадай загадку:\n${riddle}`).trim().toLowerCase();
+        if (answers.includes(userAnswer)) {
+            alert("Поздравляю! Верно!");
+            break;
+        } else {
+            if (attempt === attempts - 1) {
+                alert("Ты проиграл.");
+            } else {
+                alert("Неверно, попробуй еще раз.");
+            }
+        }
+    } 
 }
 
-const randArr = (len, func) => {
-    let result = Array(len);
-    for (let i = 0; i < result.length; i++) {
-        result[i] = func(i);        
-    }
-    return result;
-}
-
-let arr = randArr(6, rand10);
-let average = arr.reduce((akk, value) => { return akk + value;}, 0) / arr.length;
-
-console.log(average);
+userDialog();

@@ -1,6 +1,16 @@
-let arr = [9, 8, 7, 'a', 6, 5]
+function genOdd(end) {
+    return Array(Math.ceil((end - end % 2) / 2)).fill(0).map((value, index) => {
+       return (index + 1) * 2;
+    });
+}
 
-arr.sort();
-arr.pop();
+function userDialog() {
+    
+    end = Number(prompt("Введите число от 1 до 20"));
 
-console.log(arr);
+    if (typeof end !== "number" || isNaN(end) || end < 1 || end > 20) return "Неверный ввод."
+
+    return `[${genOdd(end).join(", ")}]`
+}
+
+console.log(userDialog());

@@ -1,7 +1,5 @@
-let arr = [1, 1, 1];
+let str = "hello";
 
-console.log([...arr, 2, 2, 2]);
+str = str.slice(0, 2).toUpperCase() + str.slice(2);
 
-arr.push(2, 2, 2);
-
-console.log(arr);
+console.log(str);

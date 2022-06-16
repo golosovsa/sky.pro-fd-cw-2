@@ -10,9 +10,8 @@ const randArr = (len, func) => {
     return result;
 }
 
-let arr = randArr(10, rand10);
-
-let oddArr = arr.filter((item) => { return item % 2 === 0 && item !== 0; });
+let arr = randArr(4, rand10);
+let arrPow3 = arr.map((value) => value ** 3);
 
 console.log(arr);
-console.log(oddArr);
+console.log(arrPow3);
