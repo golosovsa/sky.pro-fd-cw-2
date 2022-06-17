@@ -1,3 +1,3 @@
-# sky.pro Домашнее задание js-5
+# sky.pro Курсовая работа fd4-cw-2
 ## Задание:
-[Ссылка](https://skyengpublic.notion.site/820680df835c48cf9f26a3e3a366f98e)
+[Ссылка](https://skyengpublic.notion.site/c18d96678f434a85bacf4429a8d8fe83)

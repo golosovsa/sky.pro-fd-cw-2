@@ -1,16 +1,13 @@
-function randRange(min, max) {
-    return min + Math.round(Math.random() * (max - min));
+const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+const ru = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];
+
+function genObj(keys, values) {
+    let obj = {};
+    let length = Math.min(keys.length, values.length);
+    for (let i = 0; i < length; i++) obj[keys[i]] = values[i];
+    return obj;
 }
 
-function sumDigits(num) {
-    result = 0;
-    while (num != 0) {
-        result += num % 10;
-        num = Math.floor(num / 10);
-    } 
-    return result;
-}
+const yearDict = genObj(en, ru);
 
-num = randRange(1000, 9999);
-console.log(num);
-console.log(sumDigits(num));
+console.log(yearDict);
